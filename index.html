@@ -13,22 +13,33 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <!-- js -->
+    <script defer src="/src/js/menuHamburguesa.js"></script>
   </head>
   <body>
     <!-- Navbar -->
 
     <header>
       <nav class="navbar">
+        <div>
+          <button class="abrir" id="iconoAbrir">
+            <i class="bx bx-menu"></i>
+          </button>
+          <button class="cerrar" id="iconoCerrar">
+            <p>X</p>
+          </button>
+        </div>
         <div class="logo">
           <img src="src/img/logo navbar.png" alt="Logo Coco Verde" />
         </div>
-        <ul class="nav-links">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#proximamente">Próximamente</a></li>
-        </ul>
-        <div class="cart-icon"><img /><i class="bx bx-cart"></i></div>
+        <div class="nav-links" id="nav-links">
+          <a class="links" href="#inicio">Inicio</a>
+          <a class="links" href="#productos">Productos</a>
+          <a class="links" href="#nosotros">Nosotros</a>
+          <a class="links" href="#proximamente">Próximamente</a>
+        </div>
+        <div class="cart-icon"><i class="bx bx-cart"></i></div>
       </nav>
     </header>
 
@@ -51,33 +62,30 @@
         <h2>Productos</h2>
         <div class="productos-grid">
           <div class="producto">
-            <img class="remeraImg" src="src/img/remera 1.png" alt="Remera" />
+            <a href="productosInfo.html?producto=Remera">
+              <img class="remeraImg" src="src/img/remera 1.png" alt="Remera" />
+            </a>
             <p>Remera</p>
             <p>$15,000.00</p>
           </div>
           <div class="producto">
-            <img class="remeraImg" src="src/img/remera 1.png" alt="Remera" />
-            <p>Remera</p>
-            <p>$15,000.00</p>
+            <a href="productosInfo.html?producto=Buzo">
+              <img class="remeraImg" src="src/img/remera 1.png" alt="Buzo" />
+            </a>
+            <p>Buzo</p>
+            <p>$20,000.00</p>
           </div>
           <div class="producto">
-            <img class="remeraImg" src="src/img/remera 1.png" alt="Remera" />
-            <p>Remera</p>
-            <p>$15,000.00</p>
+            <a href="productosInfo.html?producto=Remera3">
+              <img
+                class="remeraImg"
+                src="src/img/remera 1.png"
+                alt="Remera 3"
+              />
+            </a>
+            <p>Remera 3</p>
+            <p>$12,000.00</p>
           </div>
-        </div>
-      </section>
-
-      <!-- Próximos Drops -->
-      <section id="proximamente" class="drops-section">
-        <h2>Próximos Drops</h2>
-        <div class="drop-preview">
-          <img
-            class="drops-section__img"
-            src="src/img/proximamente.png"
-            alt="Próximos drops"
-          />
-          <p class="drops-section__p">Loading Drop...</p>
         </div>
       </section>
 

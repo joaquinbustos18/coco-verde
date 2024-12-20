@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coco Verde</title>
+
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <!-- Iconos -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- js -->
+    <script defer src="/src/js/menuHamburguesa.js"></script>
+    <script defer src="/src/js/productoInfo.js"></script>
+    <script defer src="/src/js/productos.js"></script>
+  </head>
+  <body class="body-productosInfo">
+    <!-- Navbar -->
+
+    <header>
+      <nav class="navbar">
+        <div>
+          <button class="abrir" id="iconoAbrir">
+            <i class="bx bx-menu"></i>
+          </button>
+          <button class="cerrar" id="iconoCerrar">
+            <p>X</p>
+          </button>
+        </div>
+        <div class="logo">
+          <img src="src/img/logo navbar.png" alt="Logo Coco Verde" />
+        </div>
+        <div class="nav-links" id="nav-links">
+          <a class="links" href="index.html#inicio">Inicio</a>
+          <a class="links" href="index.html#productos">Productos</a>
+          <a class="links" href="index.html#nosotros">Nosotros</a>
+          <a class="links" href="index.html#proximamente">Próximamente</a>
+        </div>
+        <div class="cart-icon"><i class="bx bx-cart"></i></div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="product">
+        <!-- Sección de la imagen -->
+        <div class="image-section">
+          <img
+            id="mainImage"
+            src="src/img/remera 1.png"
+            alt="Remera Blanca"
+            class="main-image"
+          />
+          <div class="thumbnail-container">
+            <img
+              src="src/img/remera 1.png"
+              alt="Remera Blanca"
+              class="thumbnail selected"
+              id="imagen1"
+            />
+            <img
+              src="src/img/buzo.png"
+              alt="Buzo"
+              class="thumbnail"
+              id="imagen2"
+            />
+            <img
+              src="src/img/remera 3.png"
+              alt="Remera"
+              class="thumbnail"
+              id="imagen3"
+            />
+          </div>
+        </div>
+
+        <!-- Sección de detalles -->
+        <div class="details-section">
+          <div class="header">
+            <!-- Este es el h2 que cambiará -->
+            <h2 id="nombreProducto" class="name">Remera</h2>
+            <p id="precioProducto" class="price">$20.000,00</p>
+          </div>
+
+          <div class="options">
+            <div class="size">
+              <p>Talle:</p>
+              <label><input type="radio" name="size" value="S" /> S</label>
+              <label><input type="radio" name="size" value="M" /> M</label>
+              <label><input type="radio" name="size" value="L" /> L</label>
+              <label><input type="radio" name="size" value="XL" /> XL</label>
+            </div>
+
+            <div class="quantity">
+              <p>Cantidad:</p>
+              <button id="btnRestar" class="quantity-btn">-</button>
+              <input id="cantidad" type="number" value="1" min="1" max="4" />
+              <button id="btnSumar" class="quantity-btn">+</button>
+            </div>
+          </div>
+
+          <button class="add-to-cart">AGREGAR AL CARRITO</button>
+        </div>
+      </div>
+    </div>
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2024 Coco Verde. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
